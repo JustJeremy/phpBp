@@ -1,0 +1,42 @@
+{
+    "name": "justjeremy/phpbp",
+    "description": "",
+    "keywords": [
+        "justjeremy",
+        "phpbp"
+    ],
+    "homepage": "https://github.com/justjeremy/phpbp",
+    "license": "MIT License (MIT)",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Just Jeremy",
+            "email": "jerwegener@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JustJeremy\\PhpBp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JustJeremy\\PhpBp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
